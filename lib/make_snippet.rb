@@ -1,4 +1,10 @@
 def make_snippet(str)
-   str[0,5] 
+    if str.split(' ').length > 5
+      return str.split(' ').first(5).join(' ') + '...'
+    else return str
+  end 
 end         
-# p make_snippet("SHSS )
+ # make_snippet("hello")
+
+
+ 
