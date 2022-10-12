@@ -1,6 +1,4 @@
 def make_snippet(str)
-    if str.class == String 
-    true 
-    end
-end
-# p make_snippet("SHSSHSHS")
+   str[0,5] 
+end         
+# p make_snippet("SHSS )
