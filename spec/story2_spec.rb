@@ -5,14 +5,13 @@ RSpec.describe 'story2.rb' do
   # result = story2('Hello.')
   # expect(result).to eq 'H'
   
-  it 'confirms fist char CAPs & last char == "."/?/!'do 
+  it 'confirms fist char CAPs & last char == !'do 
   result = story2('Hello!')
   expect(result).to eq 'Hello!'
   end 
 
-
-
-
-
-
-end 
+  it 'no capital letter' do 
+    result = story2('hello!') 
+    expect(result).to eq 'not Captitalized!'
+    end 
+  end 
